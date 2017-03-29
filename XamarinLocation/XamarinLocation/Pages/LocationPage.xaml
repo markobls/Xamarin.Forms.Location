@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Location"
+             x:Class="XamarinLocation.Pages.LocationPage">
+
+  <StackLayout>
+
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Latitude: " FontSize="18" FontAttributes="Bold"></Label>
+      <Label x:Name="lblLatitude" FontSize="16" ></Label>
+      
+    </StackLayout>
+
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Longitude: " FontSize="18" FontAttributes="Bold"></Label>
+      <Label x:Name="lblLongitude" FontSize="16" ></Label>
+
+    </StackLayout>
+
+    <ActivityIndicator x:Name="actPiece" IsVisible="False" IsRunning="False" ></ActivityIndicator>
+    <Button Text="Get Location" x:Name="btnLocation"></Button>
+    
+    
+  </StackLayout>
+</ContentPage>
